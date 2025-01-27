@@ -8,9 +8,13 @@ This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Instructions:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Install Flutter SDK
+Install VS code
+Install Xcode for mac and Android Studio for Android
+
+After downloading the app open it in Vscode and run: flutter pub get to init all dependency in the app
+next is run the using terminal type: flutter run 
+
+I use firebase for authentication and provider for state management.

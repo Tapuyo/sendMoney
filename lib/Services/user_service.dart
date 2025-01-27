@@ -58,7 +58,7 @@ class UserService {
           id: documentID,
           sender: snapshot['sender'],
           receiver: snapshot['receiver'],
-          date: snapshot['date'].toString());
+          date: snapshot['date'].toDate());
           trans.add(temp);
     }
     return trans;
@@ -78,7 +78,7 @@ class UserService {
           id: documentID,
           sender: snapshot['sender'],
           receiver: snapshot['receiver'],
-          date: snapshot['date']);
+          date: snapshot['date'].toDate());
           trans.add(temp);
     }
     return trans;

@@ -13,7 +13,7 @@ class TransactionModel {
     double amountSend;
     String sender;
     String receiver;
-    String date;
+    DateTime date;
 
     TransactionModel({
         required this.id,

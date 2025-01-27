@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:moneysender/Models/transaction.dart';
 import 'package:moneysender/UI/SendMoneyPage.dart';
 import 'package:moneysender/provider/init_provider.dart';
@@ -128,7 +129,7 @@ class _HistorypageState extends State<Historypage> {
                               children: [
                                 Text(tran.receiver,
                                     style: TextStyle(color: Colors.white70)),
-                                Text('Jan 12, 2025',
+                                Text(DateFormat.yMMMMEEEEd().format(tran.date),
                                     style: TextStyle(
                                         color: Colors.white70, fontSize: 10))
                               ],
@@ -137,7 +138,7 @@ class _HistorypageState extends State<Historypage> {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Text('₱ 20.00',
+                                Text(tran.amountSend.toStringAsFixed(2),
                                     style: TextStyle(color: Colors.white70)),
                                 Text('send',
                                     style: TextStyle(

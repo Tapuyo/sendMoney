@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_flip_card/flutter_flip_card.dart';
+import 'package:intl/intl.dart';
 import 'package:moneysender/Models/transaction.dart';
 import 'package:moneysender/UI/HistoryPage.dart';
 import 'package:moneysender/UI/SendMoneyPage.dart';
@@ -299,7 +300,7 @@ class _HomepageState extends State<Homepage> {
                               children: [
                                 Text(tran.receiver,
                                     style: TextStyle(color: Colors.white70)),
-                                Text('Jan 12, 2025',
+                                Text(DateFormat.yMMMMEEEEd().format(tran.date),
                                     style: TextStyle(
                                         color: Colors.white70, fontSize: 10))
                               ],
@@ -308,7 +309,7 @@ class _HomepageState extends State<Homepage> {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Text('₱ 20.00',
+                                Text(tran.amountSend.toStringAsFixed(2),
                                     style: TextStyle(color: Colors.white70)),
                                 Text('send',
                                     style: TextStyle(
