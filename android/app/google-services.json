@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "466594099625",
+    "project_id": "sendmoney-c2284",
+    "storage_bucket": "sendmoney-c2284.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466594099625:android:b1476463ebba1e61c214b8",
+        "android_client_info": {
+          "package_name": "com.example.moneysender"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm6Xj6PcinG3fjDv6pObL2TPYY8aDRzNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
